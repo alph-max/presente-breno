@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Uma pequena jornada pela Terra-média — uma homenagem a Breno Sobral.">
+  <title>Uma pequena jornada — Breno Sobral</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="scene">
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="topline">
+      <span>UMA HOMENAGEM</span>
+      <span class="topline-mark">✦</span>
+      <span>EDIÇÃO ESPECIAL</span>
+    </header>
+
+    <section class="intro" id="intro" aria-label="Livro de aniversário">
+      <p class="eyebrow">Uma pequena jornada pela Terra-média</p>
+      <button class="book-button" id="openBook" type="button" aria-label="Abrir o livro de Breno Sobral">
+        <span class="book-shadow"></span>
+        <span class="book">
+          <span class="book-pages"></span>
+          <span class="book-cover">
+            <span class="cover-frame">
+              <span class="cover-star">✧</span>
+              <span class="cover-kicker">UMA HISTÓRIA SOBRE AMIZADE</span>
+              <span class="cover-title">Breno<br>Sobral</span>
+              <span class="cover-rule"></span>
+              <span class="cover-subtitle">Uma jornada<br>pela Terra-média</span>
+              <span class="cover-flourish">❧</span>
+              <span class="cover-author">EDIÇÃO ESPECIAL</span>
+            </span>
+          </span>
+        </span>
+      </button>
+      <p class="instruction">Toque no livro para começar</p>
+      <p class="small-note">Há histórias que encontramos. Outras passam a fazer parte da nossa.</p>
+    </section>
+
+    <section class="reader hidden" id="reader" aria-label="Livro aberto">
+      <div class="reader-heading">
+        <span class="reader-series">UMA PEQUENA JORNADA</span>
+        <span class="ring-mark" aria-label="Um anel">◉</span>
+        <span class="reader-name">BRENO SOBRAL</span>
+      </div>
+
+      <div class="book-spread" id="bookSpread">
+        <article class="paper-page left-page" id="leftPage">
+          <div class="page-content" id="leftContent"></div>
+        </article>
+        <article class="paper-page right-page" id="rightPage">
+          <div class="page-content" id="rightContent"></div>
+        </article>
+        <div class="page-seam" aria-hidden="true"></div>
+      </div>
+
+      <div class="reader-controls">
+        <button class="nav-button" id="prevPage" type="button" disabled>← Anterior</button>
+        <span class="page-count" id="pageCount">1–2 / 6</span>
+        <button class="nav-button primary" id="nextPage" type="button">Próximas páginas →</button>
+      </div>
+
+      <div class="reader-bottom">
+        <button class="subtle-button" id="closeBook" type="button">Fechar livro</button>
+        <button class="music-button" id="musicToggle" type="button" aria-pressed="false">
+          <span class="music-icon">♫</span><span id="musicLabel">Ativar música</span>
+        </button>
+      </div>
+      <audio id="backgroundMusic" src="assets/musica/trilha.mp3" loop preload="none"></audio>
+      <p class="music-hint" id="musicHint">A trilha é opcional. Adicione um MP3 em assets/musica/trilha.mp3.</p>
+    </section>
+
+    <footer class="footer">
+      <span>Uma lembrança feita com carinho</span>
+      <span>✦</span>
+    </footer>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
