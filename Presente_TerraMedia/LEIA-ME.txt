@@ -1,0 +1,35 @@
+PRESENTE — UMA PEQUENA JORNADA PELA TERRA-MÉDIA
+
+VERSÃO 2: LIVRO COM FOLHAS
+
+1. Extraia a pasta do ZIP.
+2. Abra a pasta no Visual Studio Code.
+3. Abra index.html com Live Server.
+4. Toque no livro para entrar.
+5. Use "Próximas páginas" e "Anterior" para folhear.
+
+COMO FUNCIONA
+- No computador, o livro mostra duas páginas lado a lado.
+- No celular, mostra uma página por vez para facilitar a leitura.
+- O botão de música é opcional e só toca após o visitante ativá-lo.
+
+MÚSICA
+Coloque um arquivo MP3 instrumental em assets/musica/ e renomeie para trilha.mp3.
+Use uma faixa que você tenha autorização para utilizar.
+
+PERSONALIZAÇÃO
+- Textos e páginas: js/script.js (array "pages").
+- Visual: css/style.css.
+- Estrutura: index.html.
+
+OBSERVAÇÃO
+A descrição física foi mantida delicada e os detalhes mais pessoais foram tratados com discrição. Revise os textos e personalize a assinatura antes de publicar.
+
+PUBLICAÇÃO
+Hospede a pasta em um serviço de hospedagem estática, como GitHub Pages. Gere o QR Code somente depois de obter o endereço público definitivo.
+
+
+ATUALIZAÇÃO — MÚSICA AO ABRIR
+A versão atual tenta iniciar a trilha assim que o visitante toca na capa do livro.
+Se o navegador bloquear a reprodução ou o arquivo MP3 não estiver presente, o botão
+"Ativar música" continua disponível como alternativa.
